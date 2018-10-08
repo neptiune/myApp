@@ -6,12 +6,28 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding class="action-sheets-basic-page">
+  <button ion-button block (click)="openMenu()">
+    Show Action Sheet
+  </button>
   <ion-list>
     <ion-list-header>Follow us on Twitter</ion-list-header>
     <ion-item>
       <ion-icon name="ionic" item-start></ion-icon>
       @ionicframework
     </ion-item>
+    <ion-item>
+      <ion-icon name="star" item-start></ion-icon>
+      Activate notifications
+    </ion-item>
+    <ion-item>
+      <ion-icon name="pin" item-start></ion-icon>
+      Assist to our events
+    </ion-item>
+    <ion-item>
+      <ion-icon name="cafe" item-start></ion-icon>
+      Contact us
+    </ion-item>
   </ion-list>
+
 </ion-content>

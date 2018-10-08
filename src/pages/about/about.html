@@ -5,7 +5,20 @@
     </ion-title>
   </ion-navbar>
 </ion-header>
-<h1>Hello world! ^^</h1>
 <ion-content padding>
-
+  <h1>Hello world! ^^</h1>
+  <ion-card>
+    <ion-card-header>
+      Try Search Feature
+    </ion-card-header>
+    <ion-card-content>
+      This is your time to test Search feature on Ionic 3
+    </ion-card-content>
+  </ion-card>
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      {{ item }}
+    </ion-item>
+  </ion-list>
 </ion-content>
